@@ -1,11 +1,45 @@
 @import "tailwindcss";
 
-@theme {
-  --font-display: "Playfair Display", serif;
-}
-
 @layer base {
-  h1, h2, h3, h4, h5, h6, .logo {
-    font-family: var(--font-display);
-  }
+ :root {
+  --warm-cream: #FAF8F5;
+  --pure-white: #FFFFFF;
+  --sage-green: #7D8C6F;
+  --forest-green: #526046;
+  --tan-brown: #BFA88F;
+  --dark-charcoal: #333333;
+  --color-primary: var(--sage-green);
+  --color-secondary: var(--tan-brown);
+  --body-bg-color: var(--warm-cream);
+  --body-font: "Plus Jakarta Sans", sans-serif;
+  --body-font-heading: "Plus Jakarta Sans", sans-serif;
+  --body-font-color: var(--dark-charcoal);
+  --font-heading-color: var(--dark-charcoal);
+  --logo-color: var(--forest-green);
+  --logo-font: "Playfair Display", serif;
+  --badge-bg: #faf7f4;
+  --badge-color: #5c534b;
+ }
+
+ body {
+  background-color: var(--body-bg-color);
+  color: var(--body-font-color);
+  font: var(--body-font);
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  font-family: var(--body-font-heading);
+ }
+
+ .logo {
+  color: var(--logo-color);
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 2rem;
+ }
+
+ .badge {
+  background-color: var(--badge-bg);
+  color: var(--badge-color);
+ }
 }

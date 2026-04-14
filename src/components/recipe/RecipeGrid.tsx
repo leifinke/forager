@@ -7,7 +7,7 @@ interface RecipeGridProps {
 
 export default function RecipeGrid({ recipes }: RecipeGridProps) {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-8">
       {recipes.map((recipe) => (
         <RecipeCard key={recipe.id} recipe={recipe} />
       ))}
