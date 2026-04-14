@@ -4,12 +4,13 @@ export const recipes: Recipe[] = [
   {
     id: "1",
     name: "Coconut Chickpea Curry",
+    handle: "coconut-chickepea-curry",
     description: "A rich and creamy curry with chickpeas, spinach, and warming spices.",
     category: "mains",
     prep_time: 10,
     cook_time: 25,
     servings: 4,
-    image_url: null,
+    image_url: "https://www.thissavoryvegan.com/wp-content/uploads/2026/04/crispy-chickpea-arugula-salad-3.jpg",
     ingredients: [
       { id: "1a", name: "chickpeas", quantity: 2, unit: "cup", sort_order: 1 },
       { id: "1b", name: "coconut milk", quantity: 1, unit: "can", sort_order: 2 },
@@ -28,6 +29,7 @@ export const recipes: Recipe[] = [
   {
     id: "2",
     name: "Berry Smoothie Bowl",
+    handle: "berry-smoothie-bowl",
     description: "A thick, frosty smoothie bowl topped with granola, banana, and fresh berries.",
     category: "breakfast",
     prep_time: 5,
@@ -49,6 +51,7 @@ export const recipes: Recipe[] = [
   {
     id: "3",
     name: "Avocado & Black Bean Tacos",
+    handle: "avocado-and-black-bean-tacos",
     description: "Quick and fresh tacos loaded with seasoned black beans, avocado, and lime crema.",
     category: "mains",
     prep_time: 10,

@@ -1,6 +1,7 @@
 export interface Recipe {
   id: string;
   name: string;
+  handle: string;
   description: string;
   category: string;
   prep_time: number;
