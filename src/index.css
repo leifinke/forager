@@ -16,7 +16,7 @@
   --body-font-color: var(--dark-charcoal);
   --font-heading-color: var(--dark-charcoal);
   --logo-color: var(--forest-green);
-  --logo-font: "Playfair Display", serif;
+  --logo-font: "Alice", serif;;
   --badge-bg: #faf7f4;
   --badge-color: #5c534b;
  }
@@ -34,7 +34,7 @@
  .logo {
   color: var(--logo-color);
   font-family: var(--logo-font);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2rem;
  }
 
