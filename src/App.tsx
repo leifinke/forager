@@ -12,6 +12,8 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
+        </Route>
+        <Route element={<Layout showNavbar={false} />}>
           <Route path="/recipe/:handle" element={<RecipeDetailPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/categories/:slug" element={<CategoryPage />} />

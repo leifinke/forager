@@ -2,11 +2,15 @@ import { Outlet } from "react-router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-export default function Layout() {
+interface LayoutProps {
+  showNavbar?: boolean;
+}
+
+export default function Layout({ showNavbar = true }: LayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar />
-      <main className="mx-auto w-full max-w-5xl flex-1 px-8 py-8">
+      {showNavbar && <Navbar />}
+      <main className="mx-auto w-full max-w-5xl flex-1">
         <Outlet />
       </main>
       <Footer />

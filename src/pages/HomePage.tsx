@@ -4,7 +4,6 @@ import RecipeGrid from "../components/recipe/RecipeGrid";
 export default function HomePage() {
   return (
     <div className="flex flex-col">
-      <h1 className="text-2xl font-bold mb-6">Recipes</h1>
       <div className="flex">
         <RecipeGrid recipes={recipes} />
       </div>
