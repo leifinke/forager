@@ -1,8 +1,12 @@
 import { useParams, Link } from "react-router";
 import { recipes } from "../data/recipes";
 import { ChevronLeft, Clock, User } from "lucide-react";
+import { useState } from "react";
+import IngredientList from "../components/recipe/IngredientList";
+
 
 export default function RecipeDetailPage() {
+  const [activeTab, setActiveTab] = useState("ingredients");
   const { handle } = useParams();
 
   const recipe = recipes.find(recipe => recipe.handle === handle);
@@ -38,6 +42,22 @@ export default function RecipeDetailPage() {
             {recipe.servings} Servings
           </span>
         </div>
+      </div>
+      <IngredientList ingredients={IngredientsListProps} />
+      <div className="flex flex-col my-6">
+        {recipe.ingredients.map((ingredient) => (
+          <div className="flex justify-between">
+            <span>{ingredient.name}</span>
+            <span>{ingredient.quantity} {ingredient.unit}</span>
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-col my-6">
+        {recipe.instructions.map((instruction) => (
+          <div>
+            {instruction.step_number} - {instruction.content}
+          </div>
+        ))}
       </div>
     </div>
   )
