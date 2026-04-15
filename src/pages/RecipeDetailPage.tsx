@@ -13,12 +13,12 @@ export default function RecipeDetailPage() {
 
   return (
     <div>
-      <Link to="/" className="flex">
+      <Link to="/" className="flex absolute mt-2 ml-2">
         <span className="bg-white rounded-full shadow-sm p-2"><ChevronLeft /></span>
       </Link>
       {recipe.image_url &&
-        <div className="flex h-48 rounded-xl overflow-hidden">
-          <img src={`/images/${recipe.image_url}`} alt={recipe.name} className="flex w-100 h-100" />
+        <div className="flex h-64 overflow-hidden aspect-[4/5] w-full">
+          <img src={`/images/${recipe.image_url}`} alt={recipe.name} className="w-full h-full object-cover object-center" />
         </div>
       }
       <div className="flex flex-col my-6">
