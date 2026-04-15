@@ -6,7 +6,6 @@ import IngredientList from "../components/recipe/IngredientList";
 
 
 export default function RecipeDetailPage() {
-  const [activeTab, setActiveTab] = useState("ingredients");
   const { handle } = useParams();
 
   const recipe = recipes.find(recipe => recipe.handle === handle);
@@ -43,7 +42,6 @@ export default function RecipeDetailPage() {
           </span>
         </div>
       </div>
-      <IngredientList ingredients={IngredientsListProps} />
       <div className="flex flex-col my-6">
         {recipe.ingredients.map((ingredient) => (
           <div className="flex justify-between">
