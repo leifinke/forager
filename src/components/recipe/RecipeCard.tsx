@@ -12,7 +12,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
       <div className="max-w-sm overflow-hidden rounded-xl bg-white">
         <div className="flex h-48 overflow-hidden relative bg-gray-300 items-center justify-center">
         {recipe.image_url ? (
-          <img src={recipe.image_url} alt={recipe.name} className="flex h-100 w-100" />
+          <img src={`/images/${recipe.image_url}`} alt={recipe.name} className="flex h-100 w-100" />
         ) : (
           <p>Image not available.</p>
         )}

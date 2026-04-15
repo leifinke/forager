@@ -18,7 +18,7 @@ export default function RecipeDetailPage() {
       </Link>
       {recipe.image_url &&
         <div className="flex h-48 rounded-xl overflow-hidden">
-          <img src={recipe.image_url} alt={recipe.name} className="flex w-100 h-100" />
+          <img src={`/images/${recipe.image_url}`} alt={recipe.name} className="flex w-100 h-100" />
         </div>
       }
       <div className="flex flex-col my-6">
