@@ -1,9 +1,6 @@
 import { useParams, Link } from "react-router";
 import { recipes } from "../data/recipes";
 import { ChevronLeft, Clock, User } from "lucide-react";
-import { useState } from "react";
-import IngredientList from "../components/recipe/IngredientList";
-
 
 export default function RecipeDetailPage() {
   const { handle } = useParams();
