@@ -84,6 +84,9 @@ export default function RecipeDetailPage() {
             ))}
           </div>
         )}
+        <Link to={`/grocery-list/${recipe.handle}`}>
+          <span>Grocery List</span>
+        </Link>
       </div>
     </div>
   )

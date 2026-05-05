@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/recipe/:handle" element={<RecipeDetailPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/categories/:slug" element={<CategoryPage />} />
-          <Route path="/grocery-list" element={<GroceryListPage />} />
+          <Route path="/grocery-list/:handle" element={<GroceryListPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
