@@ -12,7 +12,7 @@ export default function Layout({ showNavbar = true }: LayoutProps) {
     <div className="flex min-h-screen flex-col">
       <ScrollToTop />
       {showNavbar && <Navbar />}
-      <main className="mx-auto w-full max-w-5xl flex-1">
+      <main className="mx-auto w-full max-w-xl flex-1">
         <Outlet />
       </main>
       <Footer />

@@ -25,7 +25,7 @@ export default function RecipeDetailPage() {
       }
       <div className="flex flex-col p-6 gap-6 bg-white">
         <div className="flex flex-col">
-          <h1 className="text-2xl font-bold mb-2">{recipe.name} </h1>
+          <h1 className="text-2xl mb-2">{recipe.name} </h1>
           <p className="mb-2">{recipe.description}</p>
         </div>
         <div className="flex items-center gap-2">
@@ -55,16 +55,26 @@ export default function RecipeDetailPage() {
           </button>
         </div>
         {activeTab === "ingredients" && (
-          <div className="flex flex-col gap-1">
-            {recipe.ingredients.map((ingredient, index) => (
-              <div 
-                key={index}
-                className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-olive-100" : "bg-white"}`}
+          <div>
+            <div className="flex flex-col gap-1">
+              {recipe.ingredients.map((ingredient, index) => (
+                <div 
+                  key={index}
+                  className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-olive-100" : "bg-white"}`}
+                >
+                  <span className="font-semibold text-md capitalize">{ingredient.name}</span>
+                  <span className="font-normal text-sm text-taupe-600">{ingredient.quantity} {ingredient.unit}</span>
+                </div>
+              ))}
+            </div>
+            <div className="flex mt-6">
+              <Link 
+                to={`/grocery-list/${recipe.handle}`}
+                className="flex min-w-0"
               >
-                <span className="font-semibold text-md capitalize">{ingredient.name}</span>
-                <span className="font-normal text-sm text-taupe-600">{ingredient.quantity} {ingredient.unit}</span>
-              </div>
-            ))}
+                <span className="bg-primary rounded-sm py-2 px-6 text-white font-semibold w-100 text-center">Grocery List</span>
+              </Link>
+            </div>
           </div>
         )}
         {activeTab === "instructions" && (
@@ -84,9 +94,6 @@ export default function RecipeDetailPage() {
             ))}
           </div>
         )}
-        <Link to={`/grocery-list/${recipe.handle}`}>
-          <span>Grocery List</span>
-        </Link>
       </div>
     </div>
   )

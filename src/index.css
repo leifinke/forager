@@ -29,6 +29,7 @@
 
  h1, h2, h3, h4, h5, h6 {
   font-family: var(--body-font-heading);
+  font-weight: 600;
  }
 
  .logo {
@@ -41,5 +42,9 @@
  .badge {
   background-color: var(--badge-bg);
   color: var(--badge-color);
+ }
+
+ .bg-primary {
+  background-color: var(--sage-green);
  }
 }

@@ -1,5 +1,6 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { recipes } from "../data/recipes";
+import { ChevronLeft } from "lucide-react";
 
 
 export default function GroceryListPage() {
@@ -13,20 +14,27 @@ export default function GroceryListPage() {
   };
 
   return (
-    <div className="flex flex-col p-6">
-      <h1>Grocery List</h1>
-      <h2>{recipe.name}</h2>
-      <div className="flex bg-white p-6 my-4">
-        <ul>
-        {recipe.ingredients.map((ingredient, index) => (
-          <li key={index} className="flex my-2">
-            <label className="flex gap-2">
-              <input type="checkbox"></input>
-              {ingredient.name}
-            </label>
-          </li>
-        ))}
-        </ul>
+    <div>
+      <Link to={`/recipe/${recipe.handle}`} className="flex absolute mt-3 ml-3">
+        <span className="bg-white rounded-full shadow-md p-2"><ChevronLeft /></span>
+      </Link>
+      <div className="flex p-6 justify-center">
+        <h1 className="text-lg">Grocery List</h1>
+      </div>
+      <div className="flex flex-col p-6">
+        <h2 className="mb-4">{recipe.name}</h2>
+        <div className="flex">
+          <ul className="flex w-100 flex-col">
+          {recipe.ingredients.map((ingredient, index) => (
+            <li key={index} className={`flex p-4 rounded-lg ${index % 2 != 0 ? "bg-olive-100" : "bg-white"}`}>
+              <label className="flex gap-4">
+                <input className="scale-125 accent-olive-600" type="checkbox"></input>
+                <span className="font-semibold">{ingredient.name}</span>
+              </label>
+            </li>
+          ))}
+          </ul>
+        </div>
       </div>
     </div>
   )

@@ -4,7 +4,7 @@ import RecipeGrid from "../components/recipe/RecipeGrid";
 export default function HomePage() {
   return (
     <div className="flex flex-col">
-      <div className="flex">
+      <div className="flex justify-center">
         <RecipeGrid recipes={recipes} />
       </div>
     </div>
