@@ -1,13 +1,14 @@
 import { Link, useParams } from "react-router";
 import { recipes } from "../data/recipes";
 import { ChevronLeft } from "lucide-react";
+import { getRecipeByHandle } from "../data";
 
 
 export default function GroceryListPage() {
 
   const { handle } = useParams();
 
-  const recipe = recipes.find(recipe => recipe.handle === handle);
+  const recipe = handle ? getRecipeByHandle(handle) : null;
 
   if (!recipe) {
     return <h1 className="text-2xl font-bold">Grocery List Not Found.</h1>;

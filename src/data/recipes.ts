@@ -2,7 +2,7 @@ import type { Recipe } from "../types/recipe";
 
 export const recipes: Recipe[] = [
   {
-    id: "1",
+    id: "rec_chickpea_miso_noodle_soup",
     name: "Chickpea Miso Noodle Soup",
     handle: "chickepa-miso-noodle-soup",
     description: "A healing broth made from lemon and miso is perfect for cold season.",
@@ -11,19 +11,6 @@ export const recipes: Recipe[] = [
     cook_time: 25,
     servings: 4,
     image_url: "chickpea-miso-noodle-soup.jpg",
-    ingredients: [
-      { id: "1a", name: "olive oil", quantity: 1, unit: "tbsp", sort_order: 1 },
-      { id: "1b", name: "shallot, chopped", quantity: 1, unit: "whole", sort_order: 2 },
-      { id: "1c", name: "garlic cloves, minced", quantity: 2, unit: "clove", sort_order: 3 },
-      { id: "1d", name: "vegetable broth", quantity: 4, unit: "cup", sort_order: 4 },
-      { id: "1e", name: "water", quantity: 1, unit: "cup", sort_order: 5 },
-      { id: "1f", name: "chickpeas", quantity: 1.5, unit: "cup", sort_order: 6 },
-      { id: "1g", name: "quinoa elbow pasta, uncooked", quantity: 0.5, unit: "cup", sort_order: 7 },
-      { id: "1h", name: "kale, chopped", quantity: 2, unit: "cup", sort_order: 8 },
-      { id: "1i", name: "lemon juice", quantity: 2, unit: "tbsp", sort_order: 9 },
-      { id: "1j", name: "white or shiro miso", quantity: 2, unit: "tbsp", sort_order: 10 },
-      { id: "1l", name: "salt and pepper", quantity: 1, unit: "to taste", sort_order: 11 },
-    ],
     instructions: [
       { id: "1s1", step_number: 1, content: "Heat olive oil in a medium pot over low heat. Add the chopped shallot and garlic with a pinch of salt. Cook for a few minutes until slowly translucent." },
       { id: "1s2", step_number: 2, content: "Add the vegetable broth and water and simmer for 20-30 minutes." },
@@ -34,7 +21,7 @@ export const recipes: Recipe[] = [
     ],
   },
   {
-    id: "2",
+    id: "rec_maple_sriracha_tofu_bowl",
     name: "Maple Sriracha Tofu Bowl",
     handle: "maple-sriracha-tofu-bowl",
     description: "These Maple Sriracha Tofu Bowls have the perfect amount of sweetness & spice. Served over rice with spicy mayo & sesame seeds.",
@@ -43,22 +30,6 @@ export const recipes: Recipe[] = [
     cook_time: 20,
     servings: 4,
     image_url: "maple-sriracha-tofu-bowl.jpg",
-    ingredients: [
-      { id: "2a", name: "tamari", quantity: 2, unit: "tbsp", sort_order: 1 },
-      { id: "2b", name: "maple syrup", quantity: 2, unit: "tbsp", sort_order: 2 },
-      { id: "2c", name: "sriracha", quantity: 1.5, unit: "tbsp", sort_order: 3 },
-      { id: "2d", name: "sesame oil", quantity: 1, unit: "tbsp", sort_order: 4 },
-      { id: "2e", name: "ginger powder", quantity: 0.25, unit: "tsp", sort_order: 5 },
-      { id: "2f", name: "extra firm tofu", quantity: 1, unit: "block", sort_order: 6 },
-      { id: "2g", name: "corn starch", quantity: 2, unit: "tbsp", sort_order: 7 },
-      { id: "2h", name: "oil for frying", quantity: 2, unit: "tbsp", sort_order: 8 },
-      { id: "2i", name: "garlic cloves, diced", quantity: 2, unit: "clove", sort_order: 9 },
-      { id: "2j", name: "green onions, cut in 1\" chunks", quantity: 1, unit: "bunch", sort_order: 10 },
-      { id: "2k", name: "cooked rice", quantity: 2, unit: "cup", sort_order: 11 },
-      { id: "2l", name: "avocado, sliced", quantity: 1, unit: "whole", sort_order: 12 },
-      { id: "2m", name: "spicy mayo", quantity: 1, unit: "to taste", sort_order: 13 },
-      { id: "2n", name: "black sesame seeds", quantity: 1, unit: "to taste", sort_order: 14 },
-    ],
     instructions: [
       { id: "2s1", step_number: 1, content: "Combine the soy sauce, maple syrup, sriracha, sesame oil, and ginger powder in a bowl and set aside." },
       { id: "2s2", step_number: 2, content: "Cut the tofu into cubes and toss with corn starch. Heat oil in a skillet over medium heat and add the tofu, making sure pieces don't touch. Cook until browned on most sides, about 4 sides per cube. Remove tofu from the skillet, add a little more oil, then add the garlic and green onion and cook for a couple of minutes." },

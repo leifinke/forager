@@ -1,0 +1,30 @@
+import type { RecipeIngredients } from "../types/recipe";
+
+export const recipeIngredients: RecipeIngredients[] = [
+  { id: "ri_001", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_olive_oil", quantity: 1, unit: "tbsp", preparation: null, sort_order: 1 },
+  { id: "ri_002", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_shallot", quantity: 1, unit: "whole", preparation: "chopped", sort_order: 2 },
+  { id: "ri_003", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_garlic", quantity: 1, unit: "clove", preparation: "minced", sort_order: 3 },
+  { id: "ri_004", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_vegetable_broth", quantity: 4, unit: "cups", preparation: "null", sort_order: 4 },
+  { id: "ri_005", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_water", quantity: 1, unit: "cup", preparation: null, sort_order: 5 },
+  { id: "ri_006", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_chickpeas", quantity: 1, unit: "can", preparation: "rinsed", sort_order: 6 },
+  { id: "ri_007", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_macaroni_noodles", quantity: 0.5, unit: "cup", preparation: "null", sort_order: 7 },
+  { id: "ri_008", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_kale", quantity: 1, unit: "bunch", preparation: "chopped", sort_order: 8 },
+  { id: "ri_009", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_lemon", quantity: 2, unit: "tbsp", preparation: "juiced", sort_order: 9 },
+  { id: "ri_010", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_miso", quantity: 2, unit: "tbsp", preparation: null, sort_order: 10 },
+  { id: "ri_011", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_salt", quantity: 1, unit: "to taste", preparation: null, sort_order: 11 },
+  { id: "ri_012", recipe_id: "rec_chickpea_miso_noodle_soup", ingredient_id: "ing_pepper", quantity: 1, unit: "to taste", preparation: null, sort_order: 12 },
+  { id: "ri_013", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_tamari", quantity: 2, unit: "tbsp", preparation: null, sort_order: 1 },
+  { id: "ri_014", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_maple_syrup", quantity: 2, unit: "tbsp", preparation: null, sort_order: 2 },
+  { id: "ri_015", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_sriracha", quantity: 1.5, unit: "tbsp", preparation: null, sort_order: 3 },
+  { id: "ri_016", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_sesame_oil", quantity: 1, unit: "tbsp", preparation: null, sort_order: 4 },
+  { id: "ri_017", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_ginger_powder", quantity: 0.25, unit: "tbsp", preparation: null, sort_order: 5 },
+  { id: "ri_018", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_extra_firm_tofu", quantity: 1, unit: "block", preparation: null, sort_order: 6 },
+  { id: "ri_019", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_cornstarch", quantity: 2, unit: "tbsp", preparation: null, sort_order: 7 },
+  { id: "ri_019", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_olive_oil", quantity: 2, unit: "tbsp", preparation: null, sort_order: 8 },
+  { id: "ri_019", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_garlic", quantity: 2, unit: "cloves", preparation: "diced", sort_order: 9 },
+  { id: "ri_019", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_green_onion", quantity: 1, unit: "bunch", preparation: "chopped", sort_order: 10 },
+  { id: "ri_020", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_rice", quantity: 2, unit: "cups", preparation: "cooked", sort_order: 11 },
+  { id: "ri_020", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_avocado", quantity: 1, unit: "whole", preparation: "sliced", sort_order: 12 },
+  { id: "ri_021", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_spicy_mayo", quantity: 1, unit: "dressing", preparation: "drizzled", sort_order: 13 },
+  { id: "ri_021", recipe_id: "rec_maple_sriracha_tofu_bowl", ingredient_id: "ing_sesame_seeds", quantity: 1, unit: "to taste", preparation: "sprinkled", sort_order: 14 }
+]

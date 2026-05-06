@@ -8,16 +8,20 @@ export interface Recipe {
   cook_time: number;
   servings: number;
   image_url: string | null;
-  ingredients: Ingredients[];
   instructions: Instructions[];
 }
+
+// export interface Ingredients {
+//   id: string;
+//   name: string;
+//   quantity: number;
+//   unit: string;
+//   sort_order: number;
+// }
 
 export interface Ingredients {
   id: string;
   name: string;
-  quantity: number;
-  unit: string;
-  sort_order: number;
 }
 
 export interface Instructions {
@@ -25,3 +29,14 @@ export interface Instructions {
   step_number: number;
   content: string;
 }
+
+export interface RecipeIngredients {
+  id: string;
+  recipe_id: string;
+  ingredient_id: string;
+  quantity: number;
+  unit: string;
+  preparation: string | null;
+  sort_order: number;
+}
+

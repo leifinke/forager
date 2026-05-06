@@ -1,13 +1,14 @@
 import { useParams, Link } from "react-router";
 import { useState } from "react";
-import { recipes } from "../data/recipes";
 import { ChevronLeft, Clock, User } from "lucide-react";
+import { getRecipeByHandle } from "../data";
+import toFraction from "../utils/formatQuantity";
 
 export default function RecipeDetailPage() {
   const { handle } = useParams();
   const [activeTab, setActiveTab] = useState("ingredients");
 
-  const recipe = recipes.find(recipe => recipe.handle === handle);
+  const recipe = handle ? getRecipeByHandle(handle) : null;
 
   if (!recipe) {
     return <h1 className="text-2xl font-bold">Recipe Not Found.</h1>;
@@ -63,7 +64,7 @@ export default function RecipeDetailPage() {
                   className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-olive-100" : "bg-white"}`}
                 >
                   <span className="font-semibold text-md capitalize">{ingredient.name}</span>
-                  <span className="font-normal text-sm text-taupe-600">{ingredient.quantity} {ingredient.unit}</span>
+                  <span className="font-normal text-sm text-taupe-600">{toFraction(ingredient.quantity)} {ingredient.unit}</span>
                 </div>
               ))}
             </div>
