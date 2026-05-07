@@ -64,7 +64,7 @@ export default function RecipeDetailPage() {
                   className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-warm-cream" : "bg-white"}`}
                 >
                   <span className="font-semibold text-sm capitalize">{ingredient.name}</span>
-                  <span className="font-normal text-sm text-taupe-600">{toFraction(ingredient.quantity)} {ingredient.unit}</span>
+                  <span className="font-normal text-sm text-taupe-600">{toFraction(ingredient.quantity)} {ingredient.unit} {ingredient.preparation}</span>
                 </div>
               ))}
             </div>

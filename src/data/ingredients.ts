@@ -24,5 +24,16 @@ export const ingredients: Ingredients[] = [
   { id: "ing_avocado", name: "Avocado" },
   { id: "ing_spicy_mayo", name: "Spicy Mayo" },
   { id: "ing_sesame_seeds", name: "Sesame Seeds" },
-  { id: "ing_maple_syrup", name: "Maple Syrup"}
+  { id: "ing_maple_syrup", name: "Maple Syrup"},
+  { id: "ing_green_curry_paste", name: "Green Curry Paste"},
+  { id: "ing_tofu_puffs", name: "Tofu Puffs"},
+  { id: "ing_lemongrass", name: "Lemongrass"},
+  { id: "ing_coconut_milk", name: "Coconut Milk"},
+  { id: "ing_lime_leaves", name: "Lime Leaves"},
+  { id: "ing_brown_sugar", name: "Brown Sugar"},
+  { id: "ing_red_pepper", name: "Red Pepper"},
+  { id: "ing_zucchini", name: "Zucchini"},
+  { id: "ing_green_beans", name: "Green Beans"},
+  { id: "ing_thai_basil", name: "Thai Basil"},
+  { id: "ing_lime", name: "Lime"},
 ]

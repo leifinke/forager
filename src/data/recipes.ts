@@ -37,4 +37,22 @@ export const recipes: Recipe[] = [
       { id: "2s4", step_number: 4, content: "Serve the tofu over rice with avocado, sesame seeds, and spicy mayo." },
     ],
   },
+  {
+    id: "rec_thai_green_curry",
+    name: "Thai Green Curry",
+    handle: "thai-green-curry",
+    description: "This restaurant-quality Vegan Thai Green Curry will blow your mind, especially because you can make it in 45 minutes! Use store-bought curry paste to keep it weeknight friendly. Or, take it over the top by making with my homemade Green Curry Paste!",
+    category: "curry",
+    prep_time: 20,
+    cook_time: 25,
+    servings: 5,
+    image_url: "thai-green-curry.jpg",
+    instructions: [
+      { id: "3s1", step_number: 1, content: "Heat a deep 12-inch sauté pan or medium Dutch oven over medium-high heat. Once hot, add about 4 tablespoons of the coconut milk. Let it bubble and sizzle, and cook until the oil starts to separate from the milk, 1 to 2 minutes. If it doesn't really separate, don't worry (depends on the brand)." },
+      { id: "3s2", step_number: 2, content: "Add curry paste, garlic, ginger and lemongrass. Cook, stirring frequently, for 3 minutes, until it starts to dry out a bit. The curry paste might sputter so stand back. If the paste sticks, deglaze with a splash of water." },
+      { id: "3s3", step_number: 3, content: "Pour in rest of the coconut milk. Add lime leaves, sugar, and soy sauce, and stir. Bring to a rapid simmer and cook for 3 to 4 minutes, or until it just starts to thicken." },
+      { id: "3s4", step_number: 4, content: "Add vegetables of choice and the vegetable broth. Stir to submerge the veg (it's okay if not totally submerged). Partially cover the pan and bring to a rapid simmer, and cook for 6 to 8 minutes, or until the veg is tender but still crisp." },
+      { id: "3s5", step_number: 5, content: "Add in the tofu. Taste, adding more soy sauce or sugar as needed. If you used lime leaves, remove them; if not, add a squeeze of lime juice. Stir in Thai basil. Flavors will meld and mellow a bit after 15-20 min. Serve over rice and garnish with extra basil and mild red chiles, if using." },
+    ],
+  },
 ];
