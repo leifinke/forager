@@ -51,4 +51,19 @@
  .bg-warm-cream {
   background-color: var(--warm-cream);
  }
+
+ .step-number {
+  color: var(--forest-green);
+ }
+
+ .step-number::after {
+  background: var(--warm-cream);
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+ }
 }

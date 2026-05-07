@@ -44,7 +44,7 @@ export default function GroceryListPage() {
                   onChange={() => toggle(ingredient.name)}
                 ></input>
                 <span className={`flex flex-col ${checked.has(ingredient.name) ? "line-through text-gray-400" : ""}`}>
-                  <span className="font-semibold">{ingredient.name}</span>
+                  <span className="font-semibold text-sm">{ingredient.name}</span>
                   <span className="text-xs">{toFraction(ingredient.quantity)} {ingredient.unit}</span>
                 </span>
               </label>

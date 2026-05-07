@@ -63,7 +63,7 @@ export default function RecipeDetailPage() {
                   key={ingredient.id}
                   className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-warm-cream" : "bg-white"}`}
                 >
-                  <span className="font-semibold text-md capitalize">{ingredient.name}</span>
+                  <span className="font-semibold text-sm capitalize">{ingredient.name}</span>
                   <span className="font-normal text-sm text-taupe-600">{toFraction(ingredient.quantity)} {ingredient.unit}</span>
                 </div>
               ))}
@@ -83,13 +83,13 @@ export default function RecipeDetailPage() {
             {recipe.instructions.map((steps) => (
               <div
                 key={steps.id}
-                className="flex gap-4 py-3 px-1 rounded-lg"
+                className="flex gap-4 rounded-lg"
               >
-                <div className="flex">
-                  <span className="flex rounded-full items-center justify-center bg-warm-cream w-8 h-8 font-semibold">{steps.step_number}</span>
+                <div className="flex py-3 step-number relative">
+                  <span className="flex rounded-full items-center justify-center bg-warm-cream w-8 h-8 font-semibold z-10">{steps.step_number}</span>
                 </div>
-                <div className="flex">
-                  <span className="">{steps.content}</span>
+                <div className="flex py-3">
+                  <span className="text-sm">{steps.content}</span>
                 </div>
               </div>
             ))}
