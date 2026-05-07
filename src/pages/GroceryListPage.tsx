@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router";
-import { recipes } from "../data/recipes";
 import { ChevronLeft } from "lucide-react";
 import { getRecipeByHandle } from "../data";
 
