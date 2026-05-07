@@ -17,7 +17,7 @@ export default function RecipeDetailPage() {
   return (
     <div>
       <Link to="/" className="flex absolute mt-3 ml-3">
-        <span className="bg-white rounded-full shadow-md p-2"><ChevronLeft /></span>
+        <span className="bg-white rounded-full p-2"><ChevronLeft /></span>
       </Link>
       {recipe.image_url &&
         <div className="flex h-64 overflow-hidden aspect-[4/5] w-full">
@@ -26,24 +26,24 @@ export default function RecipeDetailPage() {
       }
       <div className="flex flex-col p-6 gap-6 bg-white">
         <div className="flex flex-col">
-          <h1 className="text-2xl mb-2">{recipe.name} </h1>
+          <h1 className="text-xl mb-2">{recipe.name} </h1>
           <p className="mb-2">{recipe.description}</p>
         </div>
         <div className="flex items-center gap-2">
-          <div className="flex items-center space-x-1 px-2 py-1 rounded-sm bg-taupe-200">
+          <div className="flex items-center space-x-1 px-2 py-1 rounded-sm badge">
             <span><Clock size="14"/></span>
             <span className="text-xs font-medium">
               {recipe.cook_time + recipe.prep_time} mins
             </span>
           </div>
-          <div className="flex items-center space-x-1 px-2 py-1 rounded-sm bg-taupe-200">
+          <div className="flex items-center space-x-1 px-2 py-1 rounded-sm badge">
             <span><User size="14"/></span>
             <span className="text-xs font-medium">
               {recipe.servings} Servings
             </span>
           </div>
         </div>
-        <div className="flex bg-olive-100 rounded-lg p-2 gap-2 relative">
+        <div className="flex bg-warm-cream rounded-lg p-2 gap-2 relative">
           <div className={`absolute top-2 bottom-2 w-[calc(50%-6px)] bg-white rounded-lg shadow-xs transition-transform duration-300 ease-in-out ${activeTab === "ingredients" ? "translate-x-0" : "translate-x-[calc(100%-8px)]"}`}/>
           <button 
             onClick={() => setActiveTab("ingredients")}
@@ -60,8 +60,8 @@ export default function RecipeDetailPage() {
             <div className="flex flex-col gap-1">
               {recipe.ingredients.map((ingredient, index) => (
                 <div 
-                  key={index}
-                  className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-olive-100" : "bg-white"}`}
+                  key={ingredient.id}
+                  className={`flex justify-between py-3 px-4 rounded-lg ${index % 2 !== 0 ? "bg-warm-cream" : "bg-white"}`}
                 >
                   <span className="font-semibold text-md capitalize">{ingredient.name}</span>
                   <span className="font-normal text-sm text-taupe-600">{toFraction(ingredient.quantity)} {ingredient.unit}</span>
@@ -71,22 +71,22 @@ export default function RecipeDetailPage() {
             <div className="flex mt-6">
               <Link 
                 to={`/grocery-list/${recipe.handle}`}
-                className="flex min-w-0"
+                className="flex flex-1"
               >
-                <span className="bg-primary rounded-sm py-2 px-6 text-white font-semibold w-100 text-center">Grocery List</span>
+                <div className="flex flex-1 bg-primary rounded-sm py-2 px-6 text-white font-semibold text-center justify-center">Grocery List</div>
               </Link>
             </div>
           </div>
         )}
         {activeTab === "instructions" && (
           <div className="flex flex-col">
-            {recipe.instructions.map((steps, index) => (
+            {recipe.instructions.map((steps) => (
               <div
-                key={index}
+                key={steps.id}
                 className="flex gap-4 py-3 px-1 rounded-lg"
               >
                 <div className="flex">
-                  <span className="flex rounded-full items-center justify-center bg-olive-100 w-8 h-8 font-semibold">{steps.step_number}</span>
+                  <span className="flex rounded-full items-center justify-center bg-warm-cream w-8 h-8 font-semibold">{steps.step_number}</span>
                 </div>
                 <div className="flex">
                   <span className="">{steps.content}</span>

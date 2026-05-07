@@ -25,7 +25,7 @@ export const recipes: Recipe[] = [
     name: "Maple Sriracha Tofu Bowl",
     handle: "maple-sriracha-tofu-bowl",
     description: "These Maple Sriracha Tofu Bowls have the perfect amount of sweetness & spice. Served over rice with spicy mayo & sesame seeds.",
-    category: "breakfast",
+    category: "bowl",
     prep_time: 10,
     cook_time: 20,
     servings: 4,

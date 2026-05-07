@@ -45,6 +45,10 @@
  }
 
  .bg-primary {
-  background-color: var(--sage-green);
+  background-color: var(--forest-green);
+ }
+
+ .bg-warm-cream {
+  background-color: var(--warm-cream);
  }
 }
