@@ -28,6 +28,7 @@ export default function RecipeDetailPage() {
         <div className="flex flex-col">
           <h1 className="text-xl mb-2">{recipe.name} </h1>
           <p className="mb-2">{recipe.description}</p>
+          <p className="mb-2"><a className="text-olive-700 underline" href={recipe.link} target="_blanke" rel="noopener noreferrer">View Original Recipe</a></p>
         </div>
         <div className="flex items-center gap-2">
           <div className="flex items-center space-x-1 px-2 py-1 rounded-sm badge">
